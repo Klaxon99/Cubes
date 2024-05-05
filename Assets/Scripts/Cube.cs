@@ -39,7 +39,10 @@ public class Cube : MonoBehaviour
         {
             _exploder.Detonate(_transform.position, rigidbodies);
         }
-
+        else
+        {
+            _exploder.Detonate(_transform);
+        }
         Destroy(gameObject);
     }
 }
